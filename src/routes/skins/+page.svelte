@@ -59,7 +59,10 @@
 <div class="relative flex h-screen w-full flex-col gap-4 bg-slate-950 px-6 py-2 text-slate-100">
   <div class="absolute inset-0 -z-10 bg-gradient-to-br from-emerald-500/10 via-transparent to-fuchsia-500/10"></div>
 
-  <h2 class="text-3xl font-semibold tracking-tight text-white">Select overlay</h2>
+  <p class="text-sm font-semibold tracking-tight text-gray-500">
+    Disclaimer: We don't know the exact code used to blend these skins on the server, so take this tool with a grain of
+    salt
+  </p>
   <div class="flex max-h-72 flex-wrap gap-4">
     {#snippet overlay(name: string, url: string)}
       <button
