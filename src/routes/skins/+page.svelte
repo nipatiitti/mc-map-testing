@@ -73,7 +73,7 @@
         onclick={() => (selectedOverlay = url)}
       >
         <div
-          class="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent opacity-0 transition-opacity group-hover:opacity-100"
+          class="absolute -z-10 inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent opacity-0 transition-opacity group-hover:opacity-100"
         ></div>
         <h3 class="relative rounded-2xl bg-white/10 p-2 text-center text-sm font-semibold text-slate-200">
           {name}
