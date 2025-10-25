@@ -1,12 +1,13 @@
 <script lang="ts">
   import bg from '$lib/assets/port.jpg'
-  import baker1 from '$lib/assets/skins/baker1.png'
-  import miner1 from '$lib/assets/skins/miner1.png'
+  import skin1 from '$lib/assets/skins/skin_1.png'
+  import skin2 from '$lib/assets/skins/skin_2.png'
+  import skin3 from '$lib/assets/skins/skin_3.png'
   import RenderPng from '$lib/features/Skins/RenderPng.svelte'
   import RenderPreview from '$lib/features/Skins/RenderPreview.svelte'
   import { onMount } from 'svelte'
 
-  let selectedOverlay = $state(miner1)
+  let selectedOverlay = $state(skin1)
 
   let userSkin = $state<string | null>(null)
   let loading = $state(false)
@@ -82,8 +83,9 @@
       </button>
     {/snippet}
 
-    {@render overlay('Miner 1', miner1)}
-    {@render overlay('Baker 1', baker1)}
+    {@render overlay('Miner 1', skin1)}
+    {@render overlay('Miner 2', skin2)}
+    {@render overlay('Miner 3', skin3)}
   </div>
 
   <div class="flex flex-col gap-2 rounded-xs border border-white/10 bg-white/5 p-4 text-sm text-slate-200 shadow-inner">
